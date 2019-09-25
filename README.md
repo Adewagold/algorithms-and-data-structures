@@ -13,11 +13,11 @@
 * [Geeks for geeks - Data Structure](https://www.geeksforgeeks.org/data-structures/)
 * 
 
+# Strategies and Soft Skills for Tech Interviews
+* [Strategy and soft skills](https://www.hiredintech.com/courses/interview-strategies)
+
 
 # Remote Jobs Websites
 * hired.com
 * globalskils.io
 * remotive.io
-
-# Strategies and Soft Skills for Tech Interviews
-* [Strategy and soft skills](https://www.hiredintech.com/courses/interview-strategies)
