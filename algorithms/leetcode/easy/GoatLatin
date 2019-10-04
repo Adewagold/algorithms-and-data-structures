@@ -1,0 +1,41 @@
+class Solution {
+    public String toGoatLatin(String S) {
+        String result = "";
+        int n= S.length()-1;
+        if(1<=n && n<=150){
+            String[] words = S.split(" ");
+            int countA = 0;
+           for(int i=0;i<words.length; i++){
+               String a  = words[i];
+              countA++;
+               if((a.charAt(0)=='I' ||a.charAt(0)=='i')||
+                 (a.charAt(0)=='E' ||a.charAt(0)=='e')||
+                 (a.charAt(0)=='O' ||a.charAt(0)=='o')||
+                 (a.charAt(0)=='A' ||a.charAt(0)=='a')||
+                 (a.charAt(0)=='U' ||a.charAt(0)=='u')){
+                   String appendToWord = a+"ma";
+                   
+                 result+= appendToWord+add("a",countA);   
+               }
+               else{
+                 String removeFirstChar = a.substring(1);
+                result+=  removeFirstChar+a.charAt(0)+"ma"+add("a",countA);
+               }
+                if(i>=0 && i<words.length-1){
+                    result+=" ";
+                }
+                
+           }
+        }
+        return result;
+        
+    }
+    
+    public String add(String n, int index){
+        String M ="";
+        for(int i=0; i<index;i++){
+            M+=n;
+        }
+        return M;
+    }
+}
