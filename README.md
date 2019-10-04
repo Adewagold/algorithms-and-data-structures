@@ -16,6 +16,7 @@
 
 # Strategies and Soft Skills for Tech Interviews
 * [Strategy and soft skills](https://www.hiredintech.com/courses/interview-strategies)
+* [Skillshare](https://www.skillshare.com)
 
 
 # Remote Jobs Websites
