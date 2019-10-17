@@ -1,0 +1,21 @@
+// Java Solution runtime:100%
+class Solution {
+    public boolean increasingTriplet(int[] nums) {
+        int count = 0;
+        int count2 = 0;
+        int n=nums.length -1;
+        int minValue = Integer.MIN_VALUE;
+        int maxValue = Integer.MAX_VALUE;
+        for(int i=n; i >=0;i--){
+            if(nums[i]< maxValue){
+                maxValue = nums[i];
+                count++;
+            }
+            if(nums[n-i]>minValue){
+                minValue=nums[n-i];
+                count2++;
+            }
+        }
+        return count>=3 || count2>=3;
+    }
+}
